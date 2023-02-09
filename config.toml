@@ -8,8 +8,13 @@ c = "change_selection_noyank"
 
 [keys.insert]
 S-backspace = "delete_char_backward"
+S-up = "expand_selection"
+S-down = "shrink_selection"
+S-right = "select_next_sibling"
+S-left = "select_prev_sibling"
 
 [editor]
 bufferline = "multiple"
 auto-format = false
 # auto-pairs = false
+true-color = true

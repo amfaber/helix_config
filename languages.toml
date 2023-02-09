@@ -8,3 +8,9 @@ roots = []
 [[language]]
 name = "rust"
 config = { "cargo.features" = ["wgpu"] }
+auto-format = false
+
+[[language]]
+name = "python"
+auto-format = false
+config = { pylsp.plugins.pycodestyle.enabled = false }
