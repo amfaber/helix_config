@@ -1,0 +1,15 @@
+theme="dark_plus"
+
+[keys.normal]
+A-d = "delete_selection"
+d = "delete_selection_noyank"
+A-c = "change_selection"
+c = "change_selection_noyank"
+
+[keys.insert]
+S-backspace = "delete_char_backward"
+
+[editor]
+bufferline = "multiple"
+auto-format = false
+# auto-pairs = false

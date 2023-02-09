@@ -1,0 +1,10 @@
+[[language]]
+name = "latex"
+language-server = { command = "ltex-ls" }
+file-types = ["tex"]
+scope = "source.tex"
+roots = []
+
+[[language]]
+name = "rust"
+config = { "cargo.features" = ["wgpu"] }
