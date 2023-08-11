@@ -29,7 +29,7 @@ S-down = "shrink_selection"
 S-right = "select_next_sibling"
 S-left = "select_prev_sibling"
 A-q = "normal_mode"
-A-w = ":write"
+A-w = ["normal_mode", ":write"]
 A-f = ":format"
 
 [editor]
