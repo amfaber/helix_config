@@ -13,11 +13,12 @@ roots = []
 name = "rust"
 auto-format = false
 
-[language-server.pylsp.config]
-pylsp.plugins.pycodestyle.enabled = false
+# [language-server.pylsp.config]
+# pylsp.plugins.pycodestyle.enabled = true
 
 [[language]]
 name = "python"
+language-servers = [ "pyright", { name = "black", only-features = ["format"] } ]
 auto-format = false
 
 [[language]]

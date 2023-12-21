@@ -7,8 +7,6 @@ A-c = "change_selection"
 c = "change_selection_noyank"
 A-w = ":write"
 A-f = ":format"
-tab = "indent"
-S-tab = "unindent"
 
 
 [keys.select]
@@ -18,8 +16,6 @@ A-c = "change_selection"
 c = "change_selection_noyank"
 A-w = ":write"
 A-f = ":format"
-tab = "indent"
-S-tab = "unindent"
 A-q = "normal_mode"
 
 [keys.insert]
@@ -35,7 +31,6 @@ A-f = ":format"
 [editor]
 bufferline = "multiple"
 auto-format = false
-# auto-pairs = false
 true-color = true
 
 [editor.soft-wrap]
