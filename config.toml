@@ -1,0 +1,40 @@
+theme="dark_plus"
+
+[keys.normal]
+A-d = "delete_selection"
+d = "delete_selection_noyank"
+A-c = "change_selection"
+c = "change_selection_noyank"
+A-w = ":write"
+A-f = ":format"
+
+
+[keys.select]
+A-d = "delete_selection"
+d = "delete_selection_noyank"
+A-c = "change_selection"
+c = "change_selection_noyank"
+A-w = ":write"
+A-f = ":format"
+A-q = "normal_mode"
+
+[keys.insert]
+S-backspace = "delete_char_backward"
+S-up = "expand_selection"
+S-down = "shrink_selection"
+S-right = "select_next_sibling"
+S-left = "select_prev_sibling"
+A-q = "normal_mode"
+A-w = ["normal_mode", ":write"]
+A-f = ":format"
+
+[editor]
+bufferline = "multiple"
+auto-format = false
+true-color = true
+
+[editor.soft-wrap]
+enable = true
+
+[editor.file-picker]
+hidden = false

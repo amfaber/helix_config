@@ -1,0 +1,26 @@
+[language-server.ltex-ls]
+command = "ltex-ls"
+
+
+[[language]]
+name = "latex"
+language-servers = [ "ltex-ls" ]
+file-types = ["tex"]
+scope = "source.tex"
+roots = []
+
+[[language]]
+name = "rust"
+auto-format = false
+
+# [language-server.pylsp.config]
+# pylsp.plugins.pycodestyle.enabled = true
+
+[[language]]
+name = "python"
+language-servers = [ "pyright", { name = "black", only-features = ["format"] } ]
+auto-format = false
+
+[[language]]
+name = "haskell"
+indent = { tab-width = 2, unit = " " }
