@@ -18,9 +18,29 @@ auto-format = false
 
 [[language]]
 name = "python"
-language-servers = [ "pyright", { name = "black", only-features = ["format"] } ]
+language-servers = [ "pyright", "ruff" ]
 auto-format = false
 
 [[language]]
 name = "haskell"
 indent = { tab-width = 2, unit = " " }
+
+
+[language-server.matlab-ls]
+command = "node"
+args = [ "C:/Users/afaber/Projects/MATLAB-language-server/out/index.js", "--stdio" ]
+
+[language-server.matlab-ls.config.MATLAB]
+indexWorkspace = false
+installPath = "C:/Program Files/MATLAB/R2024b"
+matlabConnectionTiming = "onStart"
+telemetry = false
+
+# [[language]]
+# name = "matlab"
+# scope = "source.m"
+# file-types = ["m"]
+# language-servers = ["matlab-ls"]
+# comment-token = "%"
+# shebangs = ["octave-cli", "matlab"]
+# indent = { tab-width = 2, unit = "  " }
