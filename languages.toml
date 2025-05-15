@@ -36,11 +36,6 @@ installPath = "C:/Program Files/MATLAB/R2024b"
 matlabConnectionTiming = "onStart"
 telemetry = false
 
-# [[language]]
-# name = "matlab"
-# scope = "source.m"
-# file-types = ["m"]
-# language-servers = ["matlab-ls"]
-# comment-token = "%"
-# shebangs = ["octave-cli", "matlab"]
-# indent = { tab-width = 2, unit = "  " }
+[language-server.rust-analyzer.config]
+# check.command = "clippy"
+files.excludeDirs = [ ".direnv", ".git", "target" ]
